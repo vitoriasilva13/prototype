@@ -1,186 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prototype. - Acesso</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div
-      class="container d-flex flex-column flex-lg-row vh-100 align-items-md-center align-content-around justify-content-md-around justify-content-center"
-    >
-      <div class="col col-lg-5 d-flex align-items-center">
-        <div>
-          <h1 class="text-warning title-font">Prototype.</h1>
-          <h5>
-            O Prototype ajuda você a criar e demonstrar protótipos de sistemas
-            por meio de I.A.
-          </h5>
-        </div>
-      </div>
-      <div class="col col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-body text-center my-4 mx-2">
-            <form>
-              <div class="mb-4">
-                <input
-                  class="form-control rounded-pill"
-                  id="emailAcesso"
-                  type="email"
-                  placeholder="E-mail ou telefone"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  class="form-control rounded-pill"
-                  id="senhaAcesso"
-                  type="password"
-                  placeholder="Senha"
-                />
-              </div>
-              <div class="d-grid gap-2">
-                <button
-                  type="submit"
-                  class="btn btn-warning text-white btn-entrar"
-                >
-                  Entrar
-                </button>
-              </div>
-            </form>
-            <a
-              href="javascript:void(0);"
-              class="text-white text-decoration-none d-block my-3"
-              >Esqueceu sua senha?</a
-            >
-            <button
-              type="button"
-              class="btn btn-warning text-white px-4 btn-nova-conta"
-              data-bs-toggle="modal"
-              data-bs-target="#modalCadastro"
-            >
-              Criar nova conta
-            </button>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototype. - Acesso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div
+    class="container d-flex flex-column flex-lg-row vh-100 align-items-md-center align-content-around justify-content-md-around justify-content-center">
+    <div class="col col-lg-5 d-flex align-items-center">
+      <div>
+        <h1 class="text-warning title-font">Prototype.</h1>
+        <h5>
+          O Prototype ajuda você a criar e demonstrar protótipos de sistemas
+          por meio de I.A.
+        </h5>
       </div>
     </div>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="modalCadastro"
-      aria-labelledby="exampleModalCenterTitle"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content p-2">
-          <div class="modal-body text-white">
-            <div class="row justify-content-between mb-3">
-              <div class="col-auto">
-                <h3>Cadastre-se</h3>
-                <h5>É rápido e fácil.</h5>
-              </div>
-              <a
-                href="javascript:void(0);"
-                class="col-1 text-white text-decoration-none"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-                >X</a
-              >
+    <div class="col col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-body text-center my-4 mx-2">
+          <form>
+            <div class="mb-4">
+              <input class="form-control rounded-pill" id="emailAcesso" type="text" placeholder="E-mail ou telefone" />
             </div>
-            <form>
-              <div class="row mb-4 flex-column flex-md-row">
-                <div class="col">
-                  <input
-                    class="form-control rounded-pill"
-                    id="nomeCadastro"
-                    type="text"
-                    placeholder="Nome"
-                  />
-                </div>
-                <div class="col mt-4 mt-md-0">
-                  <input
-                    class="form-control rounded-pill"
-                    id="sobrenomeCadastro"
-                    type="text"
-                    placeholder="Sobrenome"
-                  />
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div>
-                  <input
-                    class="form-control rounded-pill"
-                    id="celularCadastro"
-                    type="text"
-                    placeholder="Celular ou e-mail"
-                  />
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div>
-                  <input
-                    class="form-control rounded-pill"
-                    id="senhaCadastro"
-                    type="password"
-                    placeholder="Senha"
-                  />
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col">
-                  <h5>Data de nascimento</h5>
-                  <input
-                    class="form-control rounded-pill"
-                    type="date"
-                    id="nascimentoCadastro"
-                  />
-                </div>
-              </div>
-              <div class="row align-items-end flex-column flex-md-row">
-                <div class="col">
-                  <h5>Gênero</h5>
-                  <select class="form-select form-control rounded-pill">
-                    <option value="masculino" selected>Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
-                  </select>
-                </div>
-                <div class="col mt-4 mt-md-0 text-end">
-                  <div class="d-grid gap-2">
-                    <button
-                      type="submit"
-                      class="btn btn-warning text-white btn-cadastrar"
-                    >
-                      Cadastre-se
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+            <div class="mb-4">
+              <input class="form-control rounded-pill" id="senhaAcesso" type="password" placeholder="Senha" />
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-warning text-white btn-entrar">
+                Entrar
+              </button>
+            </div>
+          </form>
+          <a href="javascript:void(0);" class="text-white text-decoration-none d-block my-3">Esqueceu sua senha?</a>
+          <button type="button" class="btn btn-warning text-white px-4 btn-nova-conta" data-bs-toggle="modal"
+            data-bs-target="#modalCadastro">
+            Criar nova conta
+          </button>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalCadastro" aria-labelledby="exampleModalCenterTitle" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content p-2">
+        <div class="modal-body text-white">
+          <div class="row justify-content-between mb-3">
+            <div class="col-auto">
+              <h3>Cadastre-se</h3>
+              <h5>É rápido e fácil.</h5>
+            </div>
+            <a href="javascript:void(0);" class="col-1 text-white text-decoration-none" data-bs-dismiss="modal"
+              aria-label="Close">X</a>
+          </div>
+          <form>
+            <div class="row mb-4 flex-column flex-md-row">
+              <div class="col">
+                <input class="form-control rounded-pill" id="nomeCadastro" type="text" placeholder="Nome" />
+              </div>
+              <div class="col mt-4 mt-md-0">
+                <input class="form-control rounded-pill" id="sobrenomeCadastro" type="text" placeholder="Sobrenome" />
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div>
+                <input class="form-control rounded-pill" id="celularCadastro" type="text"
+                  placeholder="Celular ou e-mail" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div>
+                <input class="form-control rounded-pill" id="senhaCadastro" type="password" placeholder="Senha" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <h5>Data de nascimento</h5>
+                <input class="form-control rounded-pill" type="date" id="nascimentoCadastro" />
+              </div>
+            </div>
+            <div class="row align-items-end flex-column flex-md-row">
+              <div class="col">
+                <h5>Gênero</h5>
+                <select class="form-select form-control rounded-pill">
+                  <option value="masculino" selected>Masculino</option>
+                  <option value="feminino">Feminino</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="col mt-4 mt-md-0 text-end">
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-warning text-white btn-cadastrar">
+                    Cadastre-se
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
