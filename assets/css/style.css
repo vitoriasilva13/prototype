@@ -348,6 +348,10 @@ textarea.text-height {
   text-decoration: none;
 }
 
+#modal-aside.active .scroll-vh {
+  visibility: hidden;
+}
+
 @media (max-width: 575.98px) {
   aside#modal-aside {
     /* position: absolute; */
@@ -357,6 +361,8 @@ textarea.text-height {
   .active_middle {
     display: none !important;
   }
+
+
 
 
 
