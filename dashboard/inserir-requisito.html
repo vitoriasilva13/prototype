@@ -29,8 +29,8 @@
 
     </header>
 
-    <main class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row gap-3">
-        <aside class="d-flex flex-column justify-content-between mt-5" id="modal-aside">
+    <main class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row gap-3">
+        <aside class="d-flex flex-column justify-content-between mt-5 z-1" id="modal-aside">
 
             <section class="container p-4">
 
@@ -48,9 +48,45 @@
 
                     </div>
 
-                    <div class="row mb-4 flex-column flex-md-row">
-                        <div class="col">
-                        </div>
+                    <div class="d-flex flex-column gap-4 col-12 overflow-y-auto scroll-vh">
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie o bloco e declare a classe check
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            aplique o estilo de fonte intensa
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe clear
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe save
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe save
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe save
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe save
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe save
+                        </button>
+
+                        <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe save
+                        </button>
+                        <!-- <button type="button" class="btn  btn-warning text-white px-4 me-3 btn-nova-conta">
+                            crie um botão e declare a classe save
+                        </button> -->
 
                     </div>
 
@@ -68,29 +104,61 @@
 
         </aside>
 
-        <section class="container d-flex mt-auto px-4 pb-4">
+        <!--Content middle-->
+        <section class="container-fluid d-flex flex-column px-auto px-lg-4 pb-4" style="border:1px solid red"
+            id="Content">
+            <!--middle prompt-->
+            <section
+                class="container d-flex align-items-center justify-content-center mt-4 h-75 col-lg-10 col-10 active_middle"
+                id="middle" style="border:1px solid red">
+                <div class="d-flex flex-column gap-4 align-items-center">
+                    <div class="row">
+                        <button type="button" class="btn btn-warning fs-2 lh-1 text-white px-4 me-3 btn-nova-conta">
+                            Finalizado
+                        </button>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <span class="prompt-finshed">Clique no link gerado para visualizar o protótipo gerado:</span>
 
-            <form class="form-prompt">
-                <div class="d-flex flex-column justify-content-center flex-md-row">
-                    <div class="d-flex row-cols-auto align-items-center col-lg-12">
 
-                        <textarea rows="3" cols="50"
-                            placeholder="Crie para mim um HTML, CSS de uma página de login com boas práticas de design."
-                            class="form-control text-area-description textarea-rounded disabled-area padding-right-extras text-height py-3 bs-area"></textarea>
+                        <a class="text-area-description link-prompt text-break "
+                            href="#">https://www.prototype.edu.br/DnKDoDmDoE/Wlmcin
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <!--End middle prompt-->
 
 
-                        <button class="btn btn-width btn-secondary btn-text-area position-relative" type="button"
-                            id="button-addon1">PROTOTIPAR</button>
 
-                        <!-- <textarea rows="3" cols="50" placeholder="Descrição"
-                            class="form-control textarea-rounded disabled-area "></textarea> -->
+            <!-- Form Prompt-->
+            <section class="container d-flex mt-auto px-4 pb-4">
+                <form class="form-prompt ">
+                    <div class="d-flex flex-column justify-content-center flex-md-row">
+                        <div class="d-flex row-cols-auto align-items-center col-lg-12">
+
+                            <textarea rows="3" cols="50"
+                                placeholder="Crie para mim um HTML, CSS de uma página de login com boas práticas de design."
+                                class="form-control text-area-description textarea-rounded disabled-area padding-right-extras text-height py-3 bs-area"></textarea>
+
+
+                            <button class="btn btn-width btn-secondary btn-text-area position-relative" type="button"
+                                id="button-addon1">PROTOTIPAR</button>
+
+                            <!-- <textarea rows="3" cols="50" placeholder="Descrição"
+                                                                    class="form-control textarea-rounded disabled-area "></textarea> -->
+
+                        </div>
 
                     </div>
+                </form>
 
-                </div>
-            </form>
-
+            </section>
+            <!--End Form Prompt-->
         </section>
+
+
 
     </main>
 
