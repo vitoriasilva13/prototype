@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <title>ProtoType. - Acesso</title>
 </head>
 
@@ -29,16 +29,22 @@
     <div class="col col-md-6 col-lg-4">
       <div class="card">
         <div class="card-body text-center my-4 mx-2">
-          <form>
+          <form action="" method="">
             <div class="mb-4">
-              <input class="form-control rounded-pill" id="emailAcesso" type="text" placeholder="E-mail ou telefone" />
+              <input class="form-control rounded-pill" name="emailAcesso" id="emailAcesso" type="text"
+                placeholder="E-mail ou telefone" />
             </div>
             <div class="mb-4">
-              <input class="form-control rounded-pill" id="senhaAcesso" type="password" placeholder="Senha" />
+              <input class="form-control rounded-pill" name="senhaAcesso" id="senhaAcesso" type="password"
+                placeholder="Senha" />
             </div>
+            <a href="dashboard/create-proto.html" class="btn btn-warning text-white btn-entrar w-100">
+              Entrar
+            </a>
+            <!-- O botão abaixo com submit do form deve ser utilizado na versão final do projeto
             <button type="submit" class="btn btn-warning text-white btn-entrar w-100">
               Entrar
-            </button>
+            </button>-->
           </form>
           <a href="javascript:void(0);" class="text-white text-decoration-none d-block my-3">Esqueceu sua senha?</a>
           <button type="button" class="btn btn-warning text-white px-4 btn-nova-conta" data-bs-toggle="modal"
@@ -63,45 +69,51 @@
             <a href="javascript:void(0);" class="col-1 text-white text-decoration-none" data-bs-dismiss="modal"
               aria-label="Close">X</a>
           </div>
-          <form>
+          <form action="" method="">
             <div class="row mb-4 flex-column flex-md-row">
               <div class="col">
-                <input class="form-control rounded-pill" id="nomeCadastro" type="text" placeholder="Nome" />
+                <input class="form-control rounded-pill" name="nomeCadastro" id="nomeCadastro" type="text"
+                  placeholder="Nome" />
               </div>
               <div class="col mt-4 mt-md-0">
-                <input class="form-control rounded-pill" id="sobrenomeCadastro" type="text" placeholder="Sobrenome" />
+                <input class="form-control rounded-pill" name="sobrenomeCadastro" id="sobrenomeCadastro" type="text"
+                  placeholder="Sobrenome" />
               </div>
             </div>
             <div class="row mb-4">
               <div>
-                <input class="form-control rounded-pill" id="celularCadastro" type="text"
+                <input class="form-control rounded-pill" name="celularCadastro" id="celularCadastro" type="text"
                   placeholder="Celular ou e-mail" />
               </div>
             </div>
             <div class="row mb-3">
               <div>
-                <input class="form-control rounded-pill" id="senhaCadastro" type="password" placeholder="Senha" />
+                <input class="form-control rounded-pill" name="senhaCadastro" id="senhaCadastro" type="password"
+                  placeholder="Senha" />
               </div>
             </div>
             <div class="row mb-3">
               <div class="col">
                 <h5>Data de nascimento</h5>
-                <input class="form-control rounded-pill" type="date" id="nascimentoCadastro" />
+                <input class="form-control rounded-pill" type="date" name="nascimentoCadastro"
+                  id="nascimentoCadastro" />
               </div>
             </div>
             <div class="row align-items-end flex-column flex-md-row">
               <div class="col">
                 <h5>Gênero</h5>
-                <select class="form-select form-control rounded-pill">
+                <select class="form-select form-control rounded-pill" name="generoCadastro" id="generoCadastro">
                   <option value="masculino" selected>Masculino</option>
                   <option value="feminino">Feminino</option>
                   <option value="outro">Outro</option>
                 </select>
               </div>
               <div class="col mt-4 mt-md-0 text-end">
+                <a class="btn btn-warning text-white btn-cadastrar" href="dashboard/create-proto.html">Cadastre-se</a>
+                <!-- O botão abaixo com submit do form deve ser utilizado na versão final do projeto
                 <button type="submit" class="btn btn-warning text-white btn-cadastrar">
                   Cadastre-se
-                </button>
+                </button>-->
               </div>
             </div>
           </form>
