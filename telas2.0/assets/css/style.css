@@ -1,0 +1,80 @@
+:root {
+  --warning: #faaa19;
+  --body-bg: #f3f5f6;
+  --dark-bg: #304049;
+}
+
+body {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--body-bg);
+  margin: 1rem;
+  height: calc(100vh - 2rem);
+}
+
+.bold {
+  font-family: "Archivo Black";
+}
+
+.title-font,
+.text-warning {
+  font-family: "Archivo Black";
+  color: var(--warning);
+}
+
+.rounded {
+  border-radius: 25px !important;
+}
+
+aside,
+header,
+.card {
+  background-color: var(--dark-bg);
+}
+
+header {
+  height: 50px;
+}
+
+header .input-group,
+.input-group input {
+  width: 350px;
+  height: 30px;
+  border-radius: 25px;
+}
+
+.input-group-text {
+  border-radius: 25px;
+}
+
+.nav-pills .nav-link {
+  width: 80%;
+  border-radius: 25px;
+  font-family: "Archivo Black";
+  margin: 0.3rem auto;
+  text-align: left;
+  color: white;
+}
+
+.nav-pills .nav-link.active,
+.btn-warning {
+  background-color: var(--warning);
+}
+
+.btn-slim {
+  height: 30px;
+  font-size: 9pt;
+  width: 100px;
+  font-family: "Archivo Black";
+}
+
+textarea {
+  resize: none;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    height: fit-content;
+  }
+}
