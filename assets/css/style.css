@@ -48,13 +48,15 @@ header .input-group,
   border-radius: 25px;
 }
 
-.nav-pills .nav-link {
+.nav-pills .nav-link,
+.nav-anchor {
   width: 80%;
   border-radius: 25px;
   font-family: "Archivo Black";
   margin: 0.3rem auto;
   text-align: left;
   color: white;
+  text-decoration: none;
 }
 
 .nav-pills .nav-link.active,
