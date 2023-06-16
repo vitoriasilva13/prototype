@@ -1,15 +1,18 @@
-<div class="col-6">
-    <div class="card">
-        <div class="card-body">
-
-            <h5 class="text-white">Alterar senha</h5>
-            <form>
-                <input type="password" placeholder="Senha atual" name="campo-senha-atual">
-                <input type="password" placeholder="Nova senha" name="campo-nova-senha">
-                <p>Sua senha deve conter acima de 8 caracteres, letras maiúsculas e um caractere especial.</p>
-                <input type="password" placeholder="Confirmar senha" name="campo-confirmar-senha">
-                <button type="submit">Salvar</button>
-            </form>
-        </div>
+<div class="card rounded text-white col-12 col-md-6">
+    <div class="card-body">
+        <form action="">
+            <h5 class="bold mb-3">Alterar senha</h5>
+            <input class="form-control rounded-pill mb-3" type="password" placeholder="Senha atual"
+                name="campoSenhaAtual">
+            <input class="form-control rounded-pill" type="password" placeholder="Nova senha" name="campoNovaSenha">
+            <p class="small px-3">Sua senha deve conter acima de 8 caracteres, letras maiúsculas e um caractere
+                especial.
+            </p>
+            <input class="form-control rounded-pill mb-3" type="password" placeholder="Confirmar senha"
+                name="campoConfirmarSenha">
+            <div class="d-flex justify-content-end gap-2">
+                <button type="submit" class="btn-slim btn-warning btn rounded text-white">Salvar</button>
+            </div>
+        </form>
     </div>
 </div>
