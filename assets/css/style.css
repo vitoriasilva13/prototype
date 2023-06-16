@@ -69,6 +69,7 @@ header .input-group,
   font-size: 9pt;
   width: 100px;
   font-family: "Archivo Black";
+  color: white;
 }
 
 textarea {
@@ -82,5 +83,8 @@ textarea {
 @media (max-width: 767.98px) {
   body {
     height: fit-content;
+  }
+  .w-sm-100 {
+    width: 100% !important;
   }
 }
