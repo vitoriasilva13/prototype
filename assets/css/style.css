@@ -13,6 +13,11 @@ body {
   height: calc(100vh - 2rem);
 }
 
+.text-slim {
+  font-family: "Archivo";
+  font-weight: 100;
+}
+
 .bold {
   font-family: "Archivo Black";
 }
@@ -21,6 +26,14 @@ body {
 .text-warning {
   font-family: "Archivo Black";
   color: var(--warning);
+}
+
+.bg-white {
+  background-color: var(--body-bg) !important;
+}
+
+.text-dark {
+  color: var(--dark-bg) !important;
 }
 
 .rounded {
