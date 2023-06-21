@@ -93,7 +93,7 @@ header .input-group,
   font-size: 9pt;
   width: 100px;
   font-family: "Archivo Black";
-  color: var(--body-bg);
+  color: var(--body-bg) !important;
 }
 
 textarea {
