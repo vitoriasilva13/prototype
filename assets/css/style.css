@@ -40,10 +40,21 @@ body {
   border-radius: 25px !important;
 }
 
+.card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
 aside,
 header,
-.card {
+.card:not(.bg-white) {
   background-color: var(--dark-bg);
+  color: var(--body-bg);
+  border-radius: 25px !important;
+}
+
+.card-img-top {
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
 }
 
 header {
@@ -68,7 +79,7 @@ header .input-group,
   font-family: "Archivo Black";
   margin: 0.3rem auto;
   text-align: left;
-  color: white;
+  color: var(--body-bg);
   text-decoration: none;
 }
 
@@ -82,7 +93,7 @@ header .input-group,
   font-size: 9pt;
   width: 100px;
   font-family: "Archivo Black";
-  color: white;
+  color: var(--body-bg);
 }
 
 textarea {
@@ -91,6 +102,14 @@ textarea {
 
 .small {
   font-size: x-small;
+}
+
+.card-deck .card {
+  min-width: 14rem;
+}
+
+.card-deck .text-decoration-none {
+  color: var(--body-bg);
 }
 
 @media (max-width: 767.98px) {
