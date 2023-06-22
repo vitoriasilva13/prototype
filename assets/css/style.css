@@ -61,6 +61,11 @@ header {
   height: 50px;
 }
 
+form input.form-control,
+select {
+  height: 32px !important;
+}
+
 header .input-group,
 .input-group input {
   width: 350px;
