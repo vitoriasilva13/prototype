@@ -117,6 +117,13 @@ textarea {
   color: var(--body-bg);
 }
 
+.code-block,
+.code-block:focus,
+.code-block:active {
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 767.98px) {
   body {
     height: fit-content;
